@@ -7,15 +7,25 @@ const applicantsControllers = {
         })
         const data = []
         applicant.forEach(aplicant => {
-            // const aspirante = {
-            //     ...aplicant,
-            //     // detalle: `http://localhost:8001/api/products/${product.id}`
-            // }
-            data.push(aplicant)
+            const aspirante = {
+                id: aplicant.id,
+                nombre: aplicant.nombre,
+                apellido: aplicant.apellido,
+                email: aplicant.email,
+                telefono: aplicant.telefono,
+                linkedin: aplicant.linkedin,
+                fechaNamiento: aplicant.fechaNamiento,
+                sexo: aplicant.sexo,
+                img: aplicant.img,
+                profesion: aplicant.professions.profesiones,
+                detalle: `http://localhost:10/applicants/${aplicant.id}`
+            }
+            data.push(aspirante)
         })
         const response = {
             meta: {
                 status: 200,
+                totalAspirantes: data.length
             },
             data: data
         }
