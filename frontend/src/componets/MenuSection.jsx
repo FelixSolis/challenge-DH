@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/img/logo-dh.png"
 
-function SideBar() {
+function MenuSection() {
     return (
     <>
     {/* <!--Sección menu--> */}
@@ -57,4 +57,4 @@ function SideBar() {
     )
 }
 
-export default SideBar;
+export default MenuSection;

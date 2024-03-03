@@ -3,12 +3,18 @@ import React from "react"
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import SideBar from "./componets/SideBar.jsx"
+import MenuSection from "./componets/MenuSection.jsx"
+import AccessSection from "./componets/AccessSection.jsx"
+import ContentSection from "./componets/ContentSection.jsx"
 
 function App() {
   return (
     <>
-     <SideBar/>
+      <div class="dashboard">
+        <AccessSection />
+        <MenuSection />
+        <ContentSection/>
+      </div>
     </>
   )
 }
