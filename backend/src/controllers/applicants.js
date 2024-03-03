@@ -30,8 +30,28 @@ const applicantsControllers = {
             data: data
         }
         return res.status(200).json(response)
+    },
+    detail: async (req, res) => {
+        const id = req.params.id;
+        const aplicant = await db.applicants.findByPk(id, {
+            include: [{ association: "professions" }]
+        })
+        const response = {
+            id: aplicant.id,
+            nombre: aplicant.nombre,
+            apellido: aplicant.apellido,
+            email: aplicant.email,
+            telefono: aplicant.telefono,
+            linkedin: aplicant.linkedin,
+            fechaNamiento: aplicant.fechaNamiento,
+            sexo: aplicant.sexo,
+            img: aplicant.img,
+            profesion: aplicant.professions.profesiones,
+        }
+        return res.status(200).json(response)
+
     }
 
 }
 
-module.exports= applicantsControllers;
+module.exports = applicantsControllers;
