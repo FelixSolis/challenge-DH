@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom"
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import ApplicantList from "./componets/ApplicantList.jsx"
+import ApplicantDetail from "./componets/ApplicantDetail.jsx"
 import ProfessionList from "./componets/ProfessionList.jsx"
 import Empresas from "./componets/Empresas.jsx"
 import Contacto from "./componets/Contacto.jsx"
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/Aspirantes" element={<ApplicantList/>}/>
+        <Route path="/Aspirantes/:id" element={<ApplicantDetail/>}/>
         <Route path="/Profesiones" element={<ProfessionList/>}/>
         <Route path="/Empresas" element={<Empresas/>}/>
         <Route path="/Contacto" element={<Contacto/>}/>

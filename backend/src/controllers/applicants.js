@@ -9,12 +9,13 @@ const applicantsControllers = {
         applicant.forEach(aplicant => {
             const aspirante = {
                 id: aplicant.id,
+                dni: aplicant.dni,
                 nombre: aplicant.nombre,
                 apellido: aplicant.apellido,
                 email: aplicant.email,
                 telefono: aplicant.telefono,
                 linkedin: aplicant.linkedin,
-                fechaNamiento: aplicant.fechaNamiento,
+                fechaNacimiento: aplicant.fechaNacimiento,
                 sexo: aplicant.sexo,
                 img: aplicant.img,
                 profesion: aplicant.professions.profesiones,
@@ -38,12 +39,13 @@ const applicantsControllers = {
         })
         const response = {
             id: aplicant.id,
+            dni: aplicant.dni,
             nombre: aplicant.nombre,
             apellido: aplicant.apellido,
             email: aplicant.email,
             telefono: aplicant.telefono,
             linkedin: aplicant.linkedin,
-            fechaNamiento: aplicant.fechaNamiento,
+            fechaNacimiento: aplicant.fechaNacimiento,
             sexo: aplicant.sexo,
             img: aplicant.img,
             profesion: aplicant.professions.profesiones,

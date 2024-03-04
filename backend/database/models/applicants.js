@@ -5,6 +5,9 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             primaryKey: true
         },
+        dni: {
+            type: DataTypes.INTEGER,
+        },
         nombre: {
             type: DataTypes.TEXT,
         },
