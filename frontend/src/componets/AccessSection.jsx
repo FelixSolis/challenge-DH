@@ -4,23 +4,23 @@ function AccessSection() {
     return (
         <>
             {/* <!--Sección de acceso--> */}
-            <section class="search-wrap">
-                <div class="search">
+            <section className="search-wrap">
+                <div className="search">
                     <label for="search">
-                        <i class="bi bi-search" ></i>
+                        <i className="bi bi-search" ></i>
                         <input type="text" id="search" />
                     </label>
                 </div>
 
-                <div class="user-actions">
+                <div className="user-actions">
                     <button>
-                        <a href="#"><i class="bi bi-person-add" ></i></a>
+                        <a href="#"><i className="bi bi-person-add" ></i></a>
                     </button>
                     <button>
-                        <a href="#"><i class="bi bi-person"></i></a>
+                        <a href="#"><i className="bi bi-person"></i></a>
                     </button>
                     <button>
-                        <a href="#"><i class="bi bi-box-arrow-right"></i></a>
+                        <a href="#"><i className="bi bi-box-arrow-right"></i></a>
                     </button>
                 </div>
             </section>

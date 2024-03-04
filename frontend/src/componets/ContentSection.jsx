@@ -7,7 +7,7 @@ function ContentSection() {
     return (
         <>
             {/* <!--Sección contenido--> */}
-            <main class="content-wrap">
+            <main className="content-wrap">
 
                 {/* <!--Preventa--> */}
                 <Presale />
