@@ -13,7 +13,6 @@ function ApplicantSection() {
         }
         getData()
     }, [])
-    console.log(applicant)
     return (
         <>
             {/* <!--Sección aspirantes--> */}

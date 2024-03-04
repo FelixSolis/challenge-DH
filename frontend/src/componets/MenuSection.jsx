@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/img/logo-dh.png"
-
+import { Link } from "react-router-dom"
 
 function MenuSection() {
 
@@ -34,21 +34,24 @@ function MenuSection() {
 			<header className="menu-wrap">
 				<figure className="user">
 					<div className="user-avatar">
+						
 						<img src={logo} alt="Logo Digital House	" />
 					</div>
+					<Link to="/">
 					<figcaption>
 						Digital House
 					</figcaption>
-				</figure>
-				<nav>
-					<section className="menu ">
-						<h3>Opciones</h3>
-						<ul>
-							{menu.map((opc, i) => <li key={i}><a href={"/" + opc.opc}><i className={opc.icon}></i>- {opc.opc}</a></li>)}
-						</ul>
-					</section>
-				</nav>
-			</header >
+					</Link>
+			</figure>
+			<nav>
+				<section className="menu ">
+					<h3>Opciones</h3>
+					<ul>
+						{menu.map((opc, i) => <li key={i}><Link to={"/" + opc.opc}><i className={opc.icon}></i>- {opc.opc}</Link></li>)}
+					</ul>
+				</section>
+			</nav>
+		</header >
 		</>
 	)
 }
